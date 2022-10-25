@@ -1,0 +1,16 @@
+.form-info{
+    background-color: rgb(105, 182, 28);
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 30px;
+    
+}
+
+.register-info  a{
+    color: purple;
+    font-size: 19px;
+}
+
+.register-info p{
+    font-size: 19px;
+}

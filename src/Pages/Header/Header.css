@@ -1,0 +1,43 @@
+
+.me-auto{
+    margin-left: 130px;
+}
+
+.me-auto a{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.me-auto a:hover{
+    color: black;
+}
+
+.heading  {
+    text-decoration: none;
+    color: orange;
+    display: flex;
+    align-items: center;
+    
+}
+.heading:hover  {
+    color:white;
+}
+
+.heading img{
+    width:30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.Login{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.Login:hover{
+    color: black;
+}
