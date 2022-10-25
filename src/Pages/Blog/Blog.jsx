@@ -5,6 +5,7 @@ const Blog = () => {
     return (
         <div>
              <Accordion defaultActiveKey="0">
+                
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h5>Ques-01: What is Cors?</h5></Accordion.Header>
                     <Accordion.Body>
@@ -31,6 +32,7 @@ const Blog = () => {
                         <p>It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.</p>
                     </Accordion.Body>
                 </Accordion.Item>
+
              </Accordion>
         </div>
     );
