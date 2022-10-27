@@ -8,8 +8,9 @@ import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Sidebar from '../Sidebar/Sidebar';
-import image from '../../asset/cool.jpg';
+import image from '../../asset/cool0.jpg';
 import './Header.css';
+import ReactTooltip from 'react-tooltip';
 
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
     }
     return (
         <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
-            <Container>
+            <Container className='p-3'>
                 <Link className="heading" to="/">
                     <img src={image} alt="" />
                     <h2>PL-Education</h2>
@@ -31,9 +32,11 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                     <Link to="/">Home</Link>
-                    <Link to="/course">Courses</Link>
+                    <Link to="/courses">Courses</Link>
                     <Link >FAQ</Link>
                     <Link to="/blog">Blog</Link>
+                    <input type="checkbox" id="btn" />
+                    <label for='btn'><span>&#10003;</span></label>
                     </Nav>
                     <Nav>
                         <Nav.Link>
@@ -44,15 +47,20 @@ const Header = () => {
                                 </>
                                 :
                                 <>
-                                    <Link className="Login" to="/login">Login</Link>
+                                    <Link className="Login fs-5" to="/login">Login</Link>
                                 </>
                             }
                         </Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2}>
                             {
                                 user?.photoURL ?
                                 <Image roundedCircle style ={{height:'23px'}} src={user?.photoURL}></Image>
-                                : <FaUserAlt></FaUserAlt>
+                                : 
+                                <>
+                                     
+                                    <FaUserAlt  data-tip="hooo"><ReactTooltip></ReactTooltip></FaUserAlt>
+                                    
+                                </>
                             }
                         </Nav.Link>
                     </Nav>

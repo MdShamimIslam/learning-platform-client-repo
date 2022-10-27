@@ -27,7 +27,7 @@ const Register = () => {
             console.log(user);
             form.reset();
             setError('');
-            navigate('/login')
+            navigate('/')
         })
         .catch(error => {
             console.error(error);

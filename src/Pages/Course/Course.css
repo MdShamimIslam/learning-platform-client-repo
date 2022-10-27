@@ -1,0 +1,17 @@
+.cart-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-part h3{
+    color: rgb(128, 83, 0);
+}
+
+.icon{
+   font-size: 30px;
+}
+
+.details{
+    font-size: 19px;
+}

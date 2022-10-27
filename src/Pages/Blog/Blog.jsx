@@ -1,8 +1,10 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 
+
 const Blog = () => {
     return (
+        
         <div>
              <Accordion defaultActiveKey="0">
                 
@@ -34,7 +36,10 @@ const Blog = () => {
                 </Accordion.Item>
 
              </Accordion>
+             
         </div>
+            
+        
     );
 };
 

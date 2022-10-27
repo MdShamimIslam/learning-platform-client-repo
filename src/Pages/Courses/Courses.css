@@ -1,0 +1,11 @@
+
+.courses-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.footer{
+    margin-top: 50px;
+    
+}

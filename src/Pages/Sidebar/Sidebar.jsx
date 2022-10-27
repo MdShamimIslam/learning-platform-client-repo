@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Sidebar = () => {
     const [categories,setCategories] = useState([])
 
@@ -12,7 +11,7 @@ const Sidebar = () => {
     },[]);
 
     return (
-        <div>
+        <div className='sidebar'>
             <h4>All Categories</h4>
             <div>
                 
