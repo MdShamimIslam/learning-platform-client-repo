@@ -22,7 +22,6 @@ const Courses = () => {
                             course={course}
                         ></Course>)
                     }
-            
                 
                 </div>
             </div>
