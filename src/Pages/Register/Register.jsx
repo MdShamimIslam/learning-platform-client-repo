@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
@@ -55,7 +55,9 @@ const Register = () => {
                 <Form.Label className='fs-5'>Password</Form.Label>
                 <Form.Control  name="password" type="password" placeholder="Password" required/>
             </Form.Group>
-
+            <div className='register-info'>
+                <p>Already have an Account? <Link to="/login">Login</Link></p>
+            </div>
             <Button variant="primary" type="submit" className='fs-5'>
                 Register
             </Button>

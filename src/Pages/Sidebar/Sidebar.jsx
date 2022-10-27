@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const [categories,setCategories] = useState([])
+    console.log(categories);
 
     useEffect(()=>{
         fetch('http://localhost:5000/categories')

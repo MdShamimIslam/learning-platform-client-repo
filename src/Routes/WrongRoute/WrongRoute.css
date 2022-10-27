@@ -1,0 +1,16 @@
+.page-head{
+    font-size: 40px;
+    color: red;
+}
+
+.page{
+    text-align: center;
+    margin-top: 200px;
+}
+.page {
+    color: blueviolet;
+}
+
+.page h3{
+    color: darkmagenta;
+}

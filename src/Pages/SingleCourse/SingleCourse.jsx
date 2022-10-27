@@ -1,23 +1,30 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { FaFilePdf } from 'react-icons/fa';
+import './SingleCourse.css';
 
 const SingleCourse = () => {
     const singleCourse = useLoaderData();
-
+    console.log(singleCourse);
+    const {category_id,title,details,img,name} = singleCourse;
   
     return (
-        <Card style={{ width: '18rem' }}>
-            <h3>hi:{singleCourse.length}</h3>
-            <Card.Img variant="top" src="holder.js/100px180" />
+        <Card>
+            <Card.Header className='file'>
+                <h3>{name}</h3>
+                <FaFilePdf className='fs-4'></FaFilePdf>
+                </Card.Header>
+            <Card.Img variant="top" src={img} />
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{title}</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                    {details}
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Link to={`/category/${category_id}`}>
+                    <Button variant="primary">Get Premium Access</Button>
+                </Link>
             </Card.Body>
         </Card>
     );

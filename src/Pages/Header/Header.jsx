@@ -33,7 +33,7 @@ const Header = () => {
                     <Nav className="me-auto">
                     <Link to="/">Home</Link>
                     <Link to="/courses">Courses</Link>
-                    <Link >FAQ</Link>
+                    <Link to='/FAQ'>FAQ</Link>
                     <Link to="/blog">Blog</Link>
                     <input type="checkbox" id="btn" />
                     <label for='btn'><span>&#10003;</span></label>

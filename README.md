@@ -1,3 +1,25 @@
+
+#### ........About My PL-Education Project.......
+
+# My project name 'PL-Education'
+# Github client link : ('https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-MdShamimIslam')
+# Github server link : ('https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-MdShamimIslam')
+# At first I create npm  file by this code npx create-react-app
+# Then I install router, react-bootstrap
+# Then I run it
+# Then I create  all components I needed
+# Then I go to Firebase website.Then enable to google,github,email-password provider
+# Again I go to Node.js website and I install it and express,nodemon.
+# When projects are finish then git push this element.
+# Finally, deploy my project in a Firebase.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
