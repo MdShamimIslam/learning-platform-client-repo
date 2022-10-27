@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
+    
     const {createUser} = useContext(AuthContext);
 
     const navigate = useNavigate();
