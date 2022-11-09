@@ -6,7 +6,7 @@ const Sidebar = () => {
     console.log(categories);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/categories')
+        fetch('https://pl-education-server.vercel.app/categories')
         .then(res=>res.json())
         .then(data => setCategories(data))
     },[]);
