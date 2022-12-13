@@ -2,14 +2,24 @@
 .home-info{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .head{
-    width: 600px;
+    max-width: 600px;
 }
 
 .head p{
     font-size: 19px;
     
 }
+@media (max-width: 675px) {
+    .home-info{
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+    }
+    
+
+ }

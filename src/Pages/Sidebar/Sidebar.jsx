@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Sidebar = () => {
     const [categories,setCategories] = useState([])
     console.log(categories);
@@ -18,7 +19,7 @@ const Sidebar = () => {
                 
                {
                 categories.map(category => <p key={category.id}>
-                    <Link to={`category/${category.id}`}>{category.name}</Link>
+                    <Link to={`/category/${category.id}`}>{category.name}</Link>
                 </p>)
                }
 

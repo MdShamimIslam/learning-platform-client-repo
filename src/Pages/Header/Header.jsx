@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -21,9 +20,10 @@ const Header = () => {
         .then(()=>{})
         .catch(error => console.error(error))
     }
+    console.log(user?.photoURL);
     return (
         <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
-            <Container className='p-3'>
+            <Container className='w-full p-3'>
                 <Link className="heading" to="/">
                     <img src={image} alt="" />
                     <h2>PL-Education</h2>
@@ -54,7 +54,7 @@ const Header = () => {
                         <Nav.Link eventKey={2}>
                             {
                                 user?.photoURL ?
-                                <Image roundedCircle style ={{height:'23px'}} src={user?.photoURL}></Image>
+                                <div className='heading'><img src={user?.photoURL} title={user?.displayName}  alt='user'></img></div>
                                 : 
                                 <>
                                      

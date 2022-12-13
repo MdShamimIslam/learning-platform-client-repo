@@ -6,15 +6,13 @@ import './Courses.css';
 
 const Courses = () => {
     const courses = useLoaderData();
-    // console.log(courses);
+    console.log(courses);
     
     return (
         <div>
             <div className='courses-info'>
                 <Sidebar></Sidebar>
                 <div className='course-part'>
-                
-                    <h3 className='text-center'>Total Courses:{courses.length}</h3>
                 
                     {
                         courses.map(course => <Course

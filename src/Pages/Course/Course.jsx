@@ -1,12 +1,12 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import {FaFilePdf } from 'react-icons/fa';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Course.css';
 
 const Course = ({course}) => {
     console.log(course);
-    const {_id,name,title,img,details} = course;
+    const {_id,title,img,details} = course;
     return (
         <div >
             <Card className="text-center mb-5">
@@ -22,6 +22,11 @@ const Course = ({course}) => {
                         <p>{details}</p>
                     }
                 </p>
+                <Link to={`/courses/${_id}`}>
+                    <Button variant="primary" size="lg" active>
+                     Details
+                    </Button>{' '}
+                </Link>
                 </Card.Text>
                 
             </Card.Body>
